@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_my_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg"
+    tools:context=".ui.myaccount.MyAccountFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/rellay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/imgUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="150dp"
+                android:adjustViewBounds="true"
+                android:background="#FFFFFF"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/user" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgUser"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            android:text="John Smith"
+            android:textColor="#000000"
+            android:textSize="32sp" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/rellay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User ID : 12345"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
